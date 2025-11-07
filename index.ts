@@ -21,7 +21,7 @@ const SwapLeftCtrlOpt =
 const RealProgrammerQWERTYFirstLayer =
     rule("RealProgrammerQWERTY - First Layer (Symbols)")
         .manipulators([
-            withCondition(ifDevice({ product_id: 864, vendor_id: 10730 }))([
+            withCondition(ifDevice([{ product_id: 864, vendor_id: 10730 }, { product_id: 17, vendor_id: 12901 }]))([
                 map("1").to("8", "shift"),
                 map("2").to("["),
                 map("3").to("[", "shift"),
@@ -41,7 +41,7 @@ const RealProgrammerQWERTYFirstLayer =
 const RealProgrammerQWERTYSecondLayer =
     rule("RealProgrammerQWERTY - Second Layer (Numbers with Shift)")
         .manipulators([
-            withCondition(ifDevice({ product_id: 864, vendor_id: 10730 }))([
+            withCondition(ifDevice([{ product_id: 864, vendor_id: 10730 }, { product_id: 17, vendor_id: 12901 }]))([
                 map("0", "shift").to("0"),
                 map("1", "shift").to("1"),
                 map("2", "shift").to("2"),
